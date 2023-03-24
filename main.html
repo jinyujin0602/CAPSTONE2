@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/main.css" rel="stylesheet" type="text/css">
+    <link href="/main.js" type="text/javascript">
+</head>
+<body>
+    <div class="w-embed"><div class="audio-wrapper" id="player-container" href="javascript:;">
+        <audio id="myAudio" ontimeupdate="initProgressBar()">
+        <source src="http://docs.google.com/uc?export=open&amp;id=12_tjmGQS9RVjwccYFIRzIKCJZn811czl" type="audio/mpeg">
+        </audio>
+    </div>
+        
+        
+    <audio id="mouse-down">
+        <source src="http://docs.google.com/uc?export=open&amp;id=13TKaRvkfheSOCe65eRgeNc3OVxzgdGqU" type="audio/mpeg">
+    </audio>
+    
+    
+    <audio id="mouse-up">
+      <source src="http://docs.google.com/uc?export=open&amp;id=13VqdQsvOTpQv5gyDzVtfKOrQQ5_2stVU" type="audio/mpeg">
+    </audio></div><div class="w-embed"><style>
+    
+    @media only screen and (min-width: 992px) {
+    .is--song {writing-mode: vertical-rl; text-orientation: mixed;}
+    .is--artist {writing-mode: vertical-rl; text-orientation: mixed;}
+    .is--text {writing-mode: vertical-rl; text-orientation: mixed;}
+    }
+    
+    @media only screen and (max-width: 991px) {
+    .is--now-spin {writing-mode: vertical-rl; text-orientation: mixed;}
+    }
+    
+    .c-hero_sticker {pointer-events:none;}
+    .c-record {pointer-events:none;}
+    
+    
+    .c-merch {pointer-events:none;}
+    .c-form_heading {pointer-events:none;}
+    
+    </style>
+    </div>
+    <nav class="c-nav"><a href="https://threesixtyeight.com/" target="_blank" class="c-nav_logo w-inline-block">
+        <!-- <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c0e6a5214acb516d6_logo.svg" alt="" class="c-nav_logo-img">  //이미지 넣어라  -->
+        <p>ART & TECH</p>
+    </a>
+        <div class="c-nav_info">
+            <div class="c-nav_song">
+                <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5f0631484a9644c084fbb0c4_art3.jpg" alt="" class="c-nav_art"> // 앨범 넣어 짜샤
+                <div class="c-nav_title">
+                    <h6 class="is--song">DaDa</h6>
+                    <p class="is--artist">Ian Post</p>
+                </div>
+            </div>
+<div class="c-nav_time">
+<div class="c-nav_time-bar">
+<div class="html-embed w-embed">
+    <div class="player-controls scrubber">
+        <span id="seek-obj-container">
+          <progress id="seek-obj" value="0.008458874808264781" max="1"></progress>
+        </span>
+    </div>
+      
+      
+    <style>    
+      progress {width:100%;}
+      
+        progress[value] {
+          -webkit-appearance: none;
+          appearance: none;
+          background-color: white;
+          color: #0080de;
+          height: 0.5vw;
+          min-height: 8px;
+          border-radius: 100vw;
+        }
+        
+        progress[value]::-webkit-progress-bar {
+          background-color: #e7e7e8;
+          border-radius: 100vw;
+          color: #0080de;
+        }
+        
+        progress::-webkit-progress-value {
+          background-color: #0080de;
+          border-radius: 100vw;
+        }
+    </style>
+    </div>
+</div>
+<div class="c-nav_time-text">
+    <p id="start-time" class="is--text">00:02</p>
+    <p class="is--text is--center">/</p>
+    <p id="end-time" class="is--text">03:04</p>
+</div>
+</div>
+</div>
+<div class="c-nav_spinning"> 
+</div>
+</nav>
+<nav class="c-nav_header">
+    <div class="c-hero">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </div>
+</nav>
+<div class="c-contain">
+<div class="c-hero_right">
+    <a href="https://open.spotify.com/playlist/7rGDqElYFCZaogEXy6tgM2?si=GtMcYEECTJW-A2zFxM5Q9A" target="_blank" class="c-work is--hero w-inline-block">
+        <div class="c-work_bg"></div>
+        <div class="c-work_button" style="transform: translate3d(0vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <p>TSE TOP&nbsp;TRACKS</p>
+        </div>
+    </a>
+    <div class="c-power">
+        <a id="play-btn" href="#" class="">
+            <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c3a5ef789b5bb3f2c_power2.svg" alt="" class="c-power_img">
+            <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c786067b41e35938f_power1.svg" style="display: none;" alt="" class="c-power_img is--2">
+        </a>
+    </div>
+    <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c42f1a01d0f36df24_switch.svg" alt="" class="c-switch">
+    <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c8d4c70fdfc75db75_record.svg" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="c-record">
+    <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014d4159b3116ce0acfc_hand.svg" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(36deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="c-hand">
+    <div class="c-slide-box">
+        <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014cfb1871b658725557_bottom.svg" alt="" class="c-slide_botton">
+        <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014cf60ef53fe41ca270_line.svg" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-26deg) skew(0deg, 0deg); transform-style: preserve-3d;" alt="" class="c-slide_middle">
+        <img src="https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014c57ee8f7359c6d7c9_top.svg" alt="" class="c-slide_top">
+    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5efde90c257c12dbfe87c980" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://assets.website-files.com/5efde90c257c12dbfe87c980/js/projectturntable.837d0f788.js" type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script>
+    
+    // Updates SRC and Album Info
+    function setCurrentSong() {
+        var songUrl = $('.song-item').filter('.current').attr("data-song");
+        var albumArt = $('.song-item').filter('.current').attr("data-img");
+        var albumName = $('.song-item').filter('.current').find("h6").html();
+        var artistName = $('.song-item').filter('.current').find("p").html();
+      
+        $('#myAudio').attr("src",songUrl);
+        $('.c-nav_art').attr("src",albumArt);
+        $('.is--song').text(albumName);
+        $('.is--artist').text(artistName);
+        
+        };
+    
+    // Runs every second
+    function initProgressBar() {
+      var player = document.getElementById('myAudio');
+      var length = player.duration;
+      var current_time = player.currentTime;
+    
+      // calculate total length of value
+      var totalLength = calculateTotalValue(length)
+      document.getElementById("end-time").innerHTML = totalLength;
+    
+      // calculate current value time
+      var currentTime = calculateCurrentValue(current_time);
+      document.getElementById("start-time").innerHTML = currentTime;
+    
+      var progressbar = document.getElementById('seek-obj');
+      progressbar.value = player.duration ? (player.currentTime / player.duration) : 0;
+      progressbar.addEventListener("click", seek);
+    
+      if (player.currentTime == player.duration) {
+        if ($('#song-list').children().filter('.current').next().length > 0) {
+                $('#song-list').children().filter('.current').removeClass('current').next().addClass('current');
+          setCurrentSong();
+                player.play();
+        } else {
+                        $('#song-list').children().removeClass('current');
+                            $('#song-list').children().first().addClass('current');
+                      setCurrentSong();
+                      player.play();
+            }
+      }
+    
+      function seek(event) {
+        var percent = event.offsetX / this.offsetWidth;
+        player.currentTime = percent * player.duration;
+        progressbar.value = percent / 100;
+      }
+    };
+    
+    function initPlayers(num) {
+      // pass num in if there are multiple audio players e.g 'player' + i
+    
+      for (var i = 0; i < num; i++) {
+        (function() {
+    
+          // Variables
+          // ----------------------------------------------------------
+          // audio embed object
+          var playerContainer = document.getElementById('player-container'),
+            player = document.getElementById('myAudio'),
+            isPlaying = false,
+            playBtn = document.getElementById('play-btn');
+    
+          // Controls Listeners
+          // ----------------------------------------------------------
+          if (playBtn != null) {
+            playBtn.addEventListener('click', function() {
+              togglePlay()
+            });
+          }
+    
+          // Controls & Sounds Methods
+          // ----------------------------------------------------------
+          function togglePlay() {
+            if (player.paused === false) {
+              player.pause();
+              isPlaying = false;
+              document.getElementById('play-btn').className = "";
+    
+            } else {
+              player.play();
+              document.getElementById('play-btn').className = "pause";
+              isPlaying = true;
+            }
+          }
+        }());
+      }
+    }
+    
+    function calculateTotalValue(length) {
+    if (isNaN(length)) {return "00:00"};
+    var minutes = Math.floor(length / 60),
+        seconds_int = Math.round(length - minutes * 60),
+        seconds_str = seconds_int.toString(),
+        seconds = seconds_str.substr(0, 2),
+        time = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+      return time;
+    }
+    
+    function calculateCurrentValue(currentTime) {
+      var current_hour = parseInt(currentTime / 3600) % 24,
+        current_minute = parseInt(currentTime / 60) % 60,
+        current_seconds_long = currentTime % 60,
+        current_seconds = current_seconds_long.toFixed(),
+        current_time = (current_minute < 10 ? "0" + current_minute : current_minute) + ":" + (current_seconds < 10 ? "0" + current_seconds : current_seconds);
+    
+      return current_time;
+    }
+    
+    initPlayers(jQuery('#player-container').length);
+    
+    
+    
+    </script> 
+    
+    
+    
+    
+    <script>
+    
+    // Tim's Javascript
+    
+    // When document is ready
+    
+     $(function() {
+    
+    
+    
+    // Disables next / prev / shuffle when power off
+    
+    $('.c-power').on('click', function() {  
+    $(".c-controls").toggleClass('no-click');
+     });
+     
+     
+     
+    // Goes to previous song unless there are no songs left
+    
+    $('#prev').on('click', function() {  
+    
+    if ($('#song-list').children().filter('.current').prev().length > 0) {
+    
+    
+    $('#song-list').children().filter('.current').removeClass('current').prev().addClass('current');
+    $("#myAudio")[0].autoplay = true;
+    
+    }
+    
+    else {
+    $("#myAudio")[0].autoplay = true;
+    }
+    
+     });
+    
+    
+    // Goes to next song unless there are no songs left
+    
+    $('#next').on('click', function() {  
+    
+    if ($('#song-list').children().filter('.current').next().length > 0) {
+    
+    
+    $('#song-list').children().filter('.current').removeClass('current').next().addClass('current');
+    $("#myAudio")[0].autoplay = true;
+    
+    }
+    
+    else {
+    $("#myAudio")[0].autoplay = true;
+    }
+    
+     });
+     
+     
+     // Selects a random song in the list and gives it the current class
+     $('#shuffle').on('click', function() {  
+    
+        var paras = $('#song-list div');
+        var rand = Math.floor(Math.random() * paras.length);
+        $('#song-list').children().filter('.current').removeClass('current');
+        $('.song-item').eq(rand).addClass('current');
+            $("#myAudio")[0].autoplay = true;
+    
+     });
+    
+    
+    
+    // Call above funciton to update album art and info on controls click    
+    $('#next, #prev, #shuffle').on('click', function() { 
+        setCurrentSong();   
+     });
+    
+    
+    
+    // Changes volume on input change
+    var myVolume = document.getElementById("myAudio");
+    var changeVol = 0.8;
+    myVolume.volume = changeVol;
+    const input = document.querySelector('input');
+    
+    
+    input.addEventListener('input', updateValue);
+    
+    function updateValue(e) {
+      changeVol = e.target.value / 100;
+      myVolume.volume = changeVol;
+    }
+    
+    
+    
+    
+    // Play sound on mouse down
+    
+    var mouseDown = document.getElementById("mouse-down");
+    
+    $( ".c-button, .c-speaker_dots" ).mousedown(function() {
+      mouseDown.play();
+      mouseDown.volume = 0.2;
+    });
+    
+    // Play sound on mouse up
+    
+    var mouseUp = document.getElementById("mouse-up");
+    
+    $( ".c-button, .c-speaker_dots" ).mouseup(function() {
+      mouseUp.play();
+      mouseUp.volume = 0.1;
+    });
+    
+    
+    
+    
+     });
+     
+     
+     
+     
+     
+     
+     
+     let stickerCount = 0;
+    $('.c-speaker_dots').on("click", function() {
+      $(this).off("click");
+      stickerCount++;
+      //Check if all stickers have been clicked
+      if(stickerCount == 4){
+        $('.c-random-class').click();
+      }
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    // Draggable script
+    
+    $( ".c-sticker" ).draggable();
+    
+    
+    
+    
+    // Z-index script
+    
+    var count = 10;
+    $('.c-sticker').mousedown(function() {
+       $(this).css('z-index', count++);
+    });
+    
+    
+    
+    // disable hitting enter
+      $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          return false;
+        }
+      });
+    
+    </script>
+    
+    
+    
+    
+    </body>
+</html>
