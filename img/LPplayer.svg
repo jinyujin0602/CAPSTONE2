@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="401.22" height="705.133" viewBox="0 0 401.22 705.133">
+  <g id="LP플레이어_ver2" transform="translate(206.844 -146.043) rotate(47)">
+    <g id="그룹_125" data-name="그룹 125" transform="translate(174.823 21.893)">
+      <circle id="타원_23" data-name="타원 23" cx="60.65" cy="60.65" r="60.65" transform="translate(0 6.843)" stroke="#000" stroke-width="2"/>
+      <circle id="타원_24" data-name="타원 24" cx="60.65" cy="60.65" r="60.65" transform="translate(10.293)" fill="#ffe3e2" stroke="#000" stroke-width="2"/>
+    </g>
+    <g id="그룹_128" data-name="그룹 128" transform="matrix(0.961, -0.276, 0.276, 0.961, 242.597, 87.473)">
+      <path id="패스_50" data-name="패스 50" d="M256.06,88.654l23.85-8.144L338.2,248.394l-6.742,396.427-23.73.083,5.2-391.262Z" transform="translate(-254.176 -85.142)" fill="#fff" stroke="#000" stroke-width="2"/>
+      <g id="그룹_130" data-name="그룹 130" transform="translate(10.436 -15.201)">
+        <rect id="사각형_46" data-name="사각형 46" width="34.709" height="6.791" transform="translate(68.473 654.846) rotate(0.22)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+        <g id="그룹_127" data-name="그룹 127" transform="translate(27.704 550.339)">
+          <rect id="사각형_47" data-name="사각형 47" width="50.253" height="91.392" transform="translate(0.351 32.92) rotate(0.22)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+          <line id="선_21" data-name="선 21" x1="0.755" y2="53.54" transform="translate(11.936 46.736)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+          <line id="선_22" data-name="선 22" x1="0.755" y2="53.54" transform="translate(25.793 46.933)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+          <line id="선_23" data-name="선 23" x1="0.755" y2="53.54" transform="translate(39.657 47.123)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+          <circle id="타원_25" data-name="타원 25" cx="2.795" cy="2.795" r="2.795" transform="translate(31.167 107.638)"/>
+          <circle id="타원_26" data-name="타원 26" cx="2.795" cy="2.795" r="2.795" transform="translate(15.617 107.421)"/>
+          <g id="그룹_126" data-name="그룹 126" transform="translate(9.305)">
+            <path id="패스_51" data-name="패스 51" d="M301.192,677.22l-.912,36.789,33.521.282-.269-36.8Z" transform="translate(-300.28 -677.22)" fill="#f7594a" stroke="#000" stroke-width="2"/>
+            <rect id="사각형_48" data-name="사각형 48" width="33.029" height="5.144" transform="translate(0.531 21.566) rotate(0.22)" stroke="#000" stroke-width="2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_129" data-name="그룹 129" transform="translate(200.638 38.9)">
+      <circle id="타원_27" data-name="타원 27" cx="41.429" cy="41.429" r="41.429" transform="translate(0 4.676)" stroke="#000" stroke-width="2"/>
+      <circle id="타원_28" data-name="타원 28" cx="41.429" cy="41.429" r="41.429" transform="translate(7.028)" fill="#ffe3e2" stroke="#000" stroke-width="2"/>
+    </g>
+    <circle id="타원_29" data-name="타원 29" cx="22.412" cy="22.412" r="22.412" transform="translate(226.684 57.918)" stroke="#000" stroke-width="2"/>
+    <circle id="타원_30" data-name="타원 30" cx="22.412" cy="22.412" r="22.412" transform="translate(228.584 56.664)" fill="#4f4a4a" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>
