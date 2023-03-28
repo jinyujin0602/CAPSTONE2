@@ -1008,6 +1008,12 @@
      font-weight: 700;
    }
    
+   .c-art_text {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bolder;
+   }
+
    p {
      margin-bottom: 0px;
    }
@@ -1028,7 +1034,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     width: 10vw;
+     width: 15vw;
      height: 100vh;
      max-height: 100vh;
      -webkit-box-orient: vertical;
@@ -1123,16 +1129,16 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     width: 10vw;
-     height: 10vw;
-     min-height: 10vw;
+     width: 20vw;
+     height: 6vw;
+     min-height: 6vw;
      -webkit-box-pack: center;
-     -webkit-justify-content: center;
-     -ms-flex-pack: center;
+     /* -webkit-justify-content: center; */
+    
      justify-content: center;
      -webkit-box-align: center;
-     -webkit-align-items: center;
-     -ms-flex-align: center;
+     /* -webkit-align-items: center; */
+     /* -ms-flex-align: center; */
      align-items: center;
      border-bottom: 0.15vw solid #1a171d;
      background-color: #f7594a;
@@ -1147,7 +1153,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     height: 5vw;
+     height: 15vw;
      /* min-height: 5vw;
      min-width: 100%; */
      -webkit-box-pack: center;
@@ -1164,6 +1170,8 @@
      text-align: center;
      background-image: url("./img/circlelogo.png");
      background-size: cover;
+     background-position-y: center;
+    background-position-x: center;
    }
    
    .c-nav_info {
@@ -1183,18 +1191,16 @@
      -webkit-align-items: center;
      -ms-flex-align: center;
      align-items: center;
+     background-color: rgb(253, 237, 237);
    }
    
    .c-nav_art {
-     width: 6vw;
-     height: 6vw;
+     width: 10vw;
+     height: 10vw;
      margin-top: 1.5vw;
      border-style: solid;
      border-width: 0.15vw;
      border-color: #1a171d;
-     -webkit-transform: rotate(-90deg);
-     -ms-transform: rotate(-90deg);
-     transform: rotate(-90deg);
      -o-object-fit: cover;
      object-fit: cover;
    }
@@ -1204,8 +1210,9 @@
      margin-left: 0px;
      -webkit-transform: rotate(-180deg);
      -ms-transform: rotate(-180deg);
-     transform: rotate(-180deg);
+     transform: rotate(270deg);
      font-weight: 400;
+     font-weight: bolder;
      white-space: nowrap;
    }
    
@@ -1213,15 +1220,15 @@
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
-     display: flex;
+     display: contents;
    }
    
    .c-nav_song {
      position: absolute;
-     left: 0%;
+     left: 2.5vw;
      top: auto;
      right: auto;
-     bottom: 0%;
+     bottom: vw;
      z-index: 6;
      display: -webkit-box;
      display: -webkit-flex;
@@ -1233,7 +1240,7 @@
      -webkit-box-direction: reverse;
      -webkit-flex-direction: column-reverse;
      -ms-flex-direction: column-reverse;
-     flex-direction: column-reverse;
+     flex-direction: column;
      -webkit-box-pack: start;
      -webkit-justify-content: flex-start;
      -ms-flex-pack: start;
@@ -1245,9 +1252,9 @@
    }
    
    .c-nav_time {
-     position: relative;
-     left: 0%;
-     top: auto;
+     position: fixed;
+     left: -12vw;
+     top: 6vw;
      right: auto;
      bottom: 0%;
      display: -webkit-box;
@@ -1257,7 +1264,7 @@
      width: auto;
      height: 100%;
      margin-top: 0px;
-     padding-top: 3vw;
+     /* padding-top: 3vw; */
      -webkit-box-pack: center;
      -webkit-justify-content: center;
      -ms-flex-pack: center;
@@ -1266,14 +1273,17 @@
      -webkit-align-items: flex-start;
      -ms-flex-align: start;
      align-items: flex-start;
+     rotate: 90deg;
+     block-size: auto;
    }
    
    .is--song {
      margin-right: 0.3vw;
+     margin-top: 1.3vw;
      margin-left: 0px;
-     -webkit-transform: rotate(-180deg);
-     -ms-transform: rotate(-180deg);
-     transform: rotate(-180deg);
+     transform: rotate(270deg);
+     /* -ms-transform: rotate(-270deg);
+     transform: rotate(-180deg); */
    }
    
    .c-nav_time-bar {
@@ -1303,6 +1313,8 @@
      display: -ms-flexbox;
      display: flex;
      width: 2vw;
+     margin-top: -90px;
+     margin-bottom: 50px;
      padding-left: 1vw;
      -webkit-box-orient: vertical;
      -webkit-box-direction: reverse;
@@ -1317,10 +1329,44 @@
      -webkit-align-items: center;
      -ms-flex-align: center;
      align-items: center;
-     color: #0080de;
+     color: black;
+     font-size: small;
      text-align: right;
    }
+
+   .c-song_repeat_suffle{
+    position: inherit;
+    top: 10vw;;
+   }
+
+   .c-song_repeat{
+    position: absolute;
+    top: 13vw;
+    left: 2vw;
+   }
+   .c-song_suffle{
+    position: absolute;
+    top: 13vw;
+    left: 12vw;
+   }
+   .c-song_before{
+    position: absolute;
+    top: 15vw;
+    left: 2vw;
+   }
+   .c-song_start{
+    position: absolute;
+    top: 15vw;
+    left:7vw;
+   }
+
+   .c-song_after{
+    position: absolute;
+    top: 15vw;
+    left: 12vw;
+   }
    
+
    .is--text {
      margin-right: 0px;
      margin-left: 0px;
@@ -1344,7 +1390,9 @@
    .c-contain {
      overflow: hidden;
      width: 100%;
-     padding-left: 10vw;
+     padding-left: 15vw;
+     padding-top: 0vw;
+     
    }
    
    .c-volume {
@@ -1614,7 +1662,7 @@
      color: #ffe3e2;
    }
    .c-nav_header {
-    position: flex;
+    position: fs;
     top : 0%;
     left: 10vw;
    }
@@ -1623,14 +1671,14 @@
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
-     padding-left: 10vw;
+     padding-left: 20vw;
      display: flex;
      -webkit-box-align: stretch;
      -webkit-align-items: stretch;
      -ms-flex-align: stretch;
      align-items: stretch;
      border-bottom: 0.15vw solid #1a171d;
-     height: 10vw;
+     height: 6vw;
    }
    
    .is--red {
@@ -1651,7 +1699,23 @@
      -ms-transform: rotate(20deg);
      transform: rotate(20deg);
    }
-   
+   .c-box{
+    position: absolute;
+    top: 6vw;
+    left: 75vw;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    /* border: 3px solid #dddddd; */
+    width: 0px;
+    box-sizing: content-box;
+    background-color: #1884d1;
+    padding-top: 0vw;
+    /* box-sizing: border-boxx; */
+    padding-bottom: 0vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: bolder;
+   }
    .c-hero_right {
      position: relative;
      display: -webkit-box;
@@ -1660,6 +1724,7 @@
      display: flex;
      overflow: hidden;
      width: 60vw;
+     height: 49.5vw;
      -webkit-box-pack: center;
      -webkit-justify-content: center;
      -ms-flex-pack: center;
@@ -1668,10 +1733,11 @@
      -webkit-align-items: center;
      -ms-flex-align: center;
      align-items: center;
-     background-image: url("https://assets.website-files.com/5efde90c257c12dbfe87c980/5efe014cce9febfbde42edd3_background-texture.svg");
+     background-image: url("/img/LPbackground.png"); size: 50vw;
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: no-repeat;
+     border-right: 2px solid #1a171d;
    }
    
    .c-record {
@@ -1798,7 +1864,7 @@
      border-style: solid;
      border-width: 0.15vw;
      border-color: #1a171d;
-     border-radius: 0.7vw;
+     border-radius: 3vw;
      background-color: #ffcd27;
      text-align: center;
    }
@@ -1818,7 +1884,7 @@
      z-index: 1;
      width: 100%;
      height: 100%;
-     border-radius: 0.7vw;
+     border-radius: 3vw;
      background-color: #1a171d;
    }
    
@@ -2356,7 +2422,7 @@
    
    .html-embed {
      position: absolute;
-     width: 9vw;
+     width: 13vw;
      height: 0.8vw;
      min-height: 12px;
      margin-left: 1vw;
@@ -2915,6 +2981,7 @@
        border-top: 1.5px solid #1a171d;
        border-right-width: 0px;
        background-color: #fff;
+       
      }
    
      .is--outlined {
@@ -2931,12 +2998,12 @@
      }
    
      .c-nav_spinning {
-       width: 52px;
+       width: 10vw;
        height: auto;
        min-height: auto;
        min-width: auto;
        border-left: 1.5px solid #1a171d;
-       border-top-width: 0px;
+       
      }
    
      .c-nav_info {
@@ -3027,6 +3094,7 @@
        -webkit-transform: rotate(0deg);
        -ms-transform: rotate(0deg);
        transform: rotate(0deg);
+       
      }
    
      .is--text.is--center {
@@ -3463,7 +3531,8 @@
        align-items: center;
        border-radius: 7px;
      }
-   
+     
+  
      .c-work_bg {
        border-radius: 7px;
      }
